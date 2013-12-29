@@ -14,12 +14,15 @@
       }
     });
     // 去找 test.js ，根据上面设置的 base
-    seajs.use('test')
+    seajs.use('test');
 
 
   </script>
 </head>
 <body>
-  <p>alert(jQuery); 弹出了，说明引用成功</p>>
+  <ol id="oOl">
+    <li>console.log(jQuery)，（test.js require 了 jQuery）</li>
+    <li>调用接口，改变字体颜色和大小（查看 chang.js 暴露接口的方法）</li>
+  </ol>
 </body>
 </html>
