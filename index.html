@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>seajs</title>
   <!-- seajs已经去掉了 data-main 的启动方式，我不知道为什么，我觉得这样启动的话，然后再在另一个 seajs.config 里用 seajs.use 是非常好的，index.html 里面就一个 script 标签，至于要用到 jquery ，可以直接 preload 预加载 -->
   <script type="text/javascript" src="lib/sea.js" id="seajsnode"></script>
@@ -19,6 +20,6 @@
   </script>
 </head>
 <body>
-
+  <p>alert(jQuery); 弹出了，说明引用成功</p>>
 </body>
 </html>
